@@ -20,6 +20,13 @@
 
 					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+						
+						<div class="form-group">
+							<label class="col-md-4 control-label">Prefix</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="prefix" value="{{ old('prefix') }}">
+							</div>
+						</div>
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">Name</label>
@@ -29,9 +36,23 @@
 						</div>
 
 						<div class="form-group">
+							<label class="col-md-4 control-label">Surname</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="surname" value="{{ old('surname') }}">
+							</div>
+						</div>
+
+						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Address</label>
 							<div class="col-md-6">
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Userame</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="username" value="{{ old('username') }}">
 							</div>
 						</div>
 
