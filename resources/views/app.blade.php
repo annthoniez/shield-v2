@@ -57,7 +57,7 @@
 					@else
 						<li><span id="servertime"></span></body></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->prefix }}{{ Auth::user()->name }} {{ Auth::user()->surname }}<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/profile') }}"><i class="fa fa-user"></i> โปรไฟล์</a></li>
 								<li><a href="{{ url('/auth/logout') }}"><i class="fa fa-sign-out"></i> ออกจากระบบ</a></li>
