@@ -20,7 +20,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		$this -> middleware('auth');
 	}
 
 	/**
@@ -30,7 +30,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		$data = array('title' => "S.H.I.E.L.D. Systems. - Admin Panel ",);
+		return view('home', $data);
 	}
 
 }
