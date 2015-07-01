@@ -22,6 +22,7 @@
 					You are logged in!
 				</div>
 			</div>
+			</ul>
 		</div>
 
 	</div>
